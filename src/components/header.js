@@ -17,7 +17,7 @@ const Logo = props => (
 export default () => {
   return (
     <header className={styles.header}>
-      <Logo to="/" text="Genderwise" />
+      <Logo to="/" text="GenderWise" />
 
       <nav>
         <ul className={styles.header__navList}>

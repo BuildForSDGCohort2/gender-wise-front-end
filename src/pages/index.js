@@ -29,10 +29,31 @@ function LandingSection() {
   )
 }
 
+function SampleSection() {
+  return (
+    <div className={styles.sampleSection}>
+      <div>
+        <h4 className={styles.sampleSection__title}>
+          Check Gender Sensitivity
+        </h4>
+        <textarea
+          className={styles.sampleSection__textarea}
+          value="Mankind is blessed with so much resources"
+        ></textarea>
+      </div>
+      <div>
+        <h4 className={styles.sampleSection__title}>GenderWise</h4>
+        <textarea className={styles.sampleSection__textarea} value="Humanity is blessed with so much resources"></textarea>
+      </div>
+    </div>
+  )
+}
+
 export default function Home() {
   return (
     <Layout>
       <LandingSection />
+      <SampleSection />
     </Layout>
   )
 }

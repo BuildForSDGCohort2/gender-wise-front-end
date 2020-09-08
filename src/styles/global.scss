@@ -15,3 +15,8 @@ code {
 }
 
 $color-pallete-1: #407bff;
+
+@mixin margin-width($width: 80%, $margin: 0 auto) {
+  width: $width;
+  margin: $margin;
+}

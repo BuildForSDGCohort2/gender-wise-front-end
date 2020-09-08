@@ -1,11 +1,10 @@
 @import "../styles/global.scss";
 
 .header {
+  @include margin-width();
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
-  margin: 0 auto;
   padding: 2.5rem 0;
 
   &__logo {
