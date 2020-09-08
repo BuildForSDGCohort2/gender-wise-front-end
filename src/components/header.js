@@ -9,7 +9,7 @@ const HeaderLink = props => (
 )
 
 const Logo = props => (
-  <Link to={props.to}>
+  <Link to={props.to} className={styles.header__logo}>
     <div>{props.text}</div>
   </Link>
 )
