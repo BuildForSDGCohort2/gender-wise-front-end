@@ -1,6 +1,33 @@
 @import "../styles/global.scss";
 
-
 .landingSection {
-  
+  width: 80%;
+  margin: 3rem auto 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__text {
+    width: 55%;
+    h2 {
+      font-weight: bold;
+      font-size: 2.8rem;
+      line-height: 3.4rem;
+      margin-bottom: 0;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 29px;
+      margin: 0.9rem 0 3rem;
+    }
+  }
+
+  &__link {
+    padding: 1.3rem 2rem;
+    text-decoration: none;
+    color: white;
+    background: $color-pallete-1;
+    border-radius: 51px;
+  }
 }

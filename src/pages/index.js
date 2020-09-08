@@ -15,11 +15,15 @@ function LandingSection() {
         />
       </div>
       <div className={styles.landingSection__text}>
-        <h2>Turn your Gender Sensitive words into Genderwise words</h2>{" "}
+        <h2>
+          Turn your <br /> Gender Sensitive words <br /> into Genderwise words
+        </h2>
         <h3>Genderwise writing assistant</h3>
-        <Link to="/" className={styles.landingSection__link}>
-          Add to chrome
-        </Link>
+        <div>
+          <Link to="/" className={styles.landingSection__link}>
+            Add to chrome
+          </Link>
+        </div>
       </div>
     </div>
   )
