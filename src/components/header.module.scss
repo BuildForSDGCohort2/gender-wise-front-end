@@ -1,0 +1,24 @@
+@import "../styles/global.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+
+  &__navList {
+    display: flex;
+    padding: 0;
+
+    li {
+      list-style-type: none;
+      &:not(:last-child) {
+        margin-right: 44px;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
