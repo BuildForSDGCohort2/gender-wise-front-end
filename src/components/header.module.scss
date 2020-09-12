@@ -1,11 +1,11 @@
 @import "../styles/global.scss";
 
 .header {
-  @include margin-width();
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 2.5rem 0;
+  @include margin-width();
 
   &__logo {
     font-weight: bold;
@@ -18,6 +18,10 @@
   &__navList {
     display: flex;
     padding: 0;
+
+    @media screen and(max-width: 64rem) {
+      display: none;
+    }
 
     li {
       list-style-type: none;

@@ -17,16 +17,16 @@ import styles from "./index.module.scss"
 function LandingSection() {
   return (
     <div className={styles.landingSection}>
-      <div>
+      <div className={styles.landingSection__image_section}>
         <img
           src={landing_img}
           alt="genderwise illustration"
-          className={styles.landingSection__image}
+          className={styles.image}
         />
       </div>
       <div className={styles.landingSection__text}>
         <h2>
-          Turn your <br /> Gender Sensitive words <br /> into Genderwise words
+          Turn your Gender Sensitive words into Genderwise words
         </h2>
         <h3>Genderwise writing assistant</h3>
         <div>

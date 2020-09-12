@@ -22,10 +22,10 @@ export default () => {
       <nav>
         <ul className={styles.header__navList}>
           <HeaderLink to="/" text="Home" />
-          <HeaderLink to="/" text="Try it out" />
+          <HeaderLink to="/try-it" text="Try it out" />
           <HeaderLink to="/" text="Quick poll" />
           <HeaderLink to="/" text="Suggest genderwise words" />
-          <HeaderLink to="/" text="Sign in" />
+          <HeaderLink to="/sign-in" text="Sign in" />
         </ul>
       </nav>
     </header>

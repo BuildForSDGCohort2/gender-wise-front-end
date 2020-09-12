@@ -4,7 +4,7 @@ import Header from "./header"
 
 export default ({ children }) => {
   return (
-    <div>
+    <div className={styles.container}>
       <Header />
       <div>{children}</div>
     </div>
