@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"  
 import Layout from "../components/layout"
 import styles from "./quick-poll.module.scss"
 
@@ -9,14 +9,14 @@ export default function Home() {
       <div className={styles.quickPoll}>
         <p className={styles.quickPoll__paragraph}>
           Take five poll a day and Improve our algorithm for sugessting
-          Genderwise words{" "}
+          Genderwise words
         </p>
 
         <div className={styles.pollSection}>
           <p className={styles.pollSection__text}>
-            Humanity instead of Mankind
+            <span>Humanity</span> instead of <span>Mankind</span>
           </p>
-          <div>
+          <div className={styles.pollSection__seggestion}>
             <button className={styles.pollSection__button}>
               Genderwise Suggestion
             </button>
