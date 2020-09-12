@@ -15,6 +15,8 @@ code {
 }
 
 $color-pallete-1: #407bff;
+$color-pallete-2: #5e5e5e;
+$color-pallete-white: #fff;
 
 @mixin margin-width($width: 80%, $margin: 0 auto) {
   width: $width;

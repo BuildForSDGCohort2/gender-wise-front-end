@@ -1,3 +1,5 @@
+@import "../styles/global.scss";
+
 .tryIt_Section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -13,7 +15,7 @@
   .inputSection {
     // margin-top: 20px;
     min-height: 70vh;
-    background: #ffffff;
+    background: $color-pallete-white;
 
     @media screen and (max-width: 48rem) {
       min-height: 50vh;
