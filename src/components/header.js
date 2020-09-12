@@ -15,17 +15,25 @@ const Logo = props => (
 )
 
 export default () => {
+  const nav = {
+    home: { to: "/", text: "Home" },
+    "try-it": { to: "/try-it", text: "Try-it-out" },
+    "quick-poll": { to: "/quick-poll", text: "Quick poll" },
+    suggest: { to: "/suggest", text: "Suggest Genderwise words" },
+    "sign-in": { to: "/sign-in", text: "Sign in" },
+  }
+
+  console.log(Object.values(nav))
+
   return (
     <header className={styles.header}>
       <Logo to="/" text="GenderWise" />
 
       <nav>
         <ul className={styles.header__navList}>
-          <HeaderLink to="/" text="Home" />
-          <HeaderLink to="/try-it" text="Try it out" />
-          <HeaderLink to="/" text="Quick poll" />
-          <HeaderLink to="/" text="Suggest genderwise words" />
-          <HeaderLink to="/sign-in" text="Sign in" />
+          {Object.values(nav).map((menu, idx) => (
+            <HeaderLink to={menu.to} text={menu.text} key={idx} />
+          ))}
         </ul>
       </nav>
     </header>
