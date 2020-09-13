@@ -1,0 +1,45 @@
+@import "../styles/global.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+  @include margin-width();
+
+  &__logo {
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 2.7rem;
+    text-decoration: none;
+    color: $color-pallete-1;
+  }
+
+  &__navList {
+    display: flex;
+    padding: 0;
+
+    @media screen and(max-width: 64rem) {
+      display: none;
+    }
+
+    li {
+      list-style-type: none;
+      &:not(:last-child) {
+        margin-right: 2.75rem;
+      }
+      a {
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.75rem;
+        line-height: 1.25rem;
+        text-transform: capitalize;
+        color: $color-pallete-1;
+
+        // &:hover {
+        //   font-weight: 800;
+        // }
+      }
+    }
+  }
+}
