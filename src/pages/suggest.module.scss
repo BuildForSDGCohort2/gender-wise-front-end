@@ -1,79 +1,76 @@
 @import "../styles/global.scss";
 
-.quickPoll {
-  width: 80%;
-  @include margin-width($margin: 0 auto);
-  @media screen and(max-width: 425px) {
-    width: 90%;
-  }
-  &__paragraph {
-    text-align: center;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 20px;
-    color: $color-pallete-2;
-  }
-
-  &__button {
-    color: $color-pallete-white;
-    background: $color-pallete-1;
-    border-radius: 20px;
-    border: none;
-    padding: 0.75rem 1.875rem;
-
-    &:hover {
-      box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.07);
-    }
-  }
-}
-
-.pollSection {
+.suggest {
+  @include margin-width($margin: 2.5rem auto);
   display: flex;
   flex-direction: column;
   // justify-content: center;
   align-items: center;
   max-width: 30rem;
-  margin: 2rem auto 3rem;
   background: $color-pallete-white;
   box-shadow: 0px 4px 20px 1px rgba(0, 0, 0, 0.07);
   border-radius: 28px;
   padding: 1.75rem 1.5rem;
 
-  &__text {
-    text-align: center;
-    color: $color-pallete-2;
-    span {
-      font-weight: 700;
-    }
+  @media screen and (max-width: 768px) {
+    margin-top: 1rem;
+    padding: 1.75rem 1rem;
   }
 
-  &__seggestion {
+  &__form {
     width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 0.75rem;
-    margin-bottom: 2rem;
-
-    @media screen and(max-width: 425px) {
-      width: 90%;
+    align-items: center;
+    @media screen and (max-width: 425px) {
+      width: 100%;
     }
   }
 
-  &__button {
-    color: #585858;
-    background: $color-pallete-white;
-    box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.06);
+  &__text {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #5e5e5e;
+    &:nth-child(1) {
+      margin-bottom: 3.5rem;
+    }
+
+    &:nth-child(2) {
+      margin: 1.3rem 0;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    background: #ffffff;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.06);
     border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    padding: 1.25rem;
+    &::placeholder {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 20px;
+      color: #b8b8b886;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__submit {
+    // width: fit-content;
+    color: #fff;
+    background: #407bff;
+    border-radius: 20px;
     border: none;
-    padding: 1.3rem;
-    &:not(:last-child) {
-      margin-bottom: 2rem;
-    }
-    &:hover {
-      cursor: pointer;
-      background: #e6edff;
-    }
+    padding: 0.75rem 1.875rem;
+    margin-top: 3.5rem;
   }
 }

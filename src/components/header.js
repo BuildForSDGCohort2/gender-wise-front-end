@@ -22,9 +22,7 @@ export default () => {
     suggest: { to: "/suggest", text: "Suggest Genderwise words" },
     "sign-in": { to: "/sign-in", text: "Sign in" },
   }
-
-  console.log(Object.values(nav))
-
+  
   return (
     <header className={styles.header}>
       <Logo to="/" text="GenderWise" />
